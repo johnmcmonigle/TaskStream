@@ -20,6 +20,10 @@ public class Main {
 
         System.out.println("Total number of deadlines: " + countDeadlines(tasksData));
 
+        printDataWithStreams(tasksData);
+        printDeadlinesWithStreams(tasksData);
+        System.out.println("Number of deadlines w/ streams: " + countDeadlinesWithStream(tasksData));
+
     }
 
     private static int countDeadlines(ArrayList<Task> tasksData) {
@@ -34,7 +38,7 @@ public class Main {
 
     public static void printData(ArrayList<Task> tasksData) {
         for (Task t : tasksData) {
-            System.out.println(t);
+            System.out.println(t); //method call
         }
     }
 
